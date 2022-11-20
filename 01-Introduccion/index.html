@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--iconodes de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header p-5 mb-5">
+        <h1 class="text-center">Bootstrap 5 -</h1>
+        <p class="text-center text-white">Básicos de Bootstrap 5</p>
+    </header>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Contenedores</h1>
+
+        <div class="container">Contenido 1</div>
+
+        <!--containers nueevos -media queryes-->
+        <div class="container-xs">Contenido</div>
+        <!--menor a 576px-->
+        <div class="container-sm">Contenido</div>
+        <!--mayor a 576px-->
+        <div class="container-md">Contenido</div>
+        <!-- mayor a 768px-->
+        <div class="container-lg">Contenido</div>
+        <!--mayoe a 992px-->
+        <div class="container-xl">Contenido</div>
+        <!--mayor|apartir de 1200px , mas usado-->
+        <div class="container-xxl">Contenido</div>
+        <!--mayor a 1400px-->
+
+        <div class="container-fluid">Contenido</div>
+        <!--toma todo el espacio, usado-->
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Grid</h1>
+
+        <div class="container-xl">
+            <div class="row">
+                <!--los col serian las columnas hacia la derecha de la fila-->
+                <div class="col-md-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi doloremque excepturi et ad! Nostrum, suscipit enim, accusantium dignissimos veritatis facilis totam alias quaerat est ex dolore ab? Sequi, quaerat sed!</div>
+                <div class="col-sm-6 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quia veritatis voluptate fugit sunt molestias eius? Esse beatae veritatis, neque officia perspiciatis similique accusamus labore laboriosam assumenda nisi, eius veniam!</div>
+                <div class="col-sm-6 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quia veritatis voluptate fugit sunt molestias eius? Esse beatae veritatis, neque officia perspiciatis similique accusamus labore laboriosam assumenda nisi, eius veniam!</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Tipografia</h1>
+
+        <h1>Encabezado 1</h1>
+        <h2>Encabezado 1</h2>
+        <h3>Encabezado 1</h3>
+        <h4>Encabezado 1</h4>
+        <h5>Encabezado 1</h5>
+        <h6>Encabezado 1</h6>
+
+        <p>este es un parrafo</p>
+
+        <!--displays, son basicamente es la misma apariencia de la fuente pero con diferentes tamaños, se puede aplicar a lo quee sea un texto-->
+        <h1 class="display-1">Encabezado con display</h1>
+        <h1 class="display-2">Encabezado con display</h1>
+        <h1 class="display-3">Encabezado con display</h1>
+        <h1 class="display-4">Encabezado con display</h1>
+        <h1 class="display-5">Encabezado con display</h1>
+        <h1 class="display-6">Encabezado con display</h1>
+
+        <p class="display-1">Parrafo con Display</p>
+
+        <!--Font Size (fs)-->
+        <h1 class="fs-1">Encabezado con Font Size</h1>
+        <!--el mas grande-->
+        <h1 class="fs-2">Encabezado con Font Size</h1>
+        <h1 class="fs-3">Encabezado con Font Size</h1>
+        <h1 class="fs-4">Encabezado con Font Size</h1>
+        <h1 class="fs-5">Encabezado con Font Size</h1>
+        <h1 class="fs-6">Encabezado con Font Size</h1>
+        <!--el mas pequeño-->
+
+        <p class="fs-1">Parrafo con fontSize</p>
+
+        <!--Utilidades para alinear textos-->
+        <p class="text-start">Texto a la izquierda</p>
+        <p class="text-end">Texto a la derecha</p>
+        <p class="text-center">Texto al centro</p>
+
+        <!--con media queries-->
+        <p class="text-end text-md-center text-lg-start">Texto a la derecha, centro e izquierda...</p>
+
+        <!--textos en mayusculas y minusculas | capitalizacion-->
+        <p class="text-lowercase">minusculas</p>
+        <p class="text-uppercase">mayusculas</p>
+        <p class="text-capitalize">encabezado con tipo capital</p>
+
+        <!--controlar el font-weigth | fw-->
+        <p class="fw-bold">Texto</p>
+        <p class="fw-normal">Texto</p>
+        <p class="fw-light">Texto</p>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Colores en Bootstrap </h1>
+        <!--colores para textos text--->
+        <h1 class="text-primary">Colores en textos</h1>
+        <h1 class="text-secondary">Colores en textos</h1>
+        <h1 class="text-warning">Colores en textos</h1>
+        <h1 class="text-danger">Colores en textos</h1>
+        <h1 class="text-success">Colores en textos</h1>
+
+        <div class="bg-primary text-success text-center ">Un div con contenido</div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Imagenes </h1>
+
+        <!--images resposibas img-fluid-->
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-fluid img-thumbnail" src="img/curso_1.jpg" alt="imagen-curso">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Botones</h1>
+
+        <button type="button" class="btn btn-primary"><i class="bi bi-person-plus-fill"></i> Agregar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+        <button type="button" class="btn btn-warning">Comprobar</button>
+        <button type="button" class="btn btn-dark">Guardar</button>
+
+        <a href="#" class="btn btn-primary">Enlace</a>
+        <!--con btn, los a y los input se ven igual que un button-->
+
+        <input type="submit" class="btn btn-primary" value="Enviar formulario">
+        <button type="submit" class="btn btn-primary"><i class="bi bi-alarm"></i> boton submit</button>
+
+        <!--estan cool estos botones-->
+        <a href="#" class="btn btn-outline-primary">Enlace</a>
+
+        <a href="#" class="btn btn-outline-danger">Enlace</a>
+
+        <a href="#" class="btn btn-outline-warning">Enlace</a>
+
+        <button type="button" class="btn btn-primary btn-lg">Agregar</button>
+
+        <button type="button" class="btn btn-warning">Comprobar</button>
+        <button type="button" class="btn btn-dark" disabled>Guardar</button>
+        <!--disabled para desactivar un botton-->
+        <button type="button" class="btn btn-danger btn-sm"> <i class="bi bi-x"></i> Eliminar</button>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">margin y padding </h1>
+        <!--el margin es el margen del contenedor hacia afuera-->
+        <!--el padding es del contenedor hacia adentro | de la info al contenedor-->
+
+        <div class="container-xl">
+            <div class="bg-success pt-2 ps-3 px-1">
+                <p class="text-white">Ejemplos de padding y margin</p>
+            </div>
+        </div>
+
+        <div class="container-xl">
+            <div class="bg-danger pt-2 ps-3 px-1 mt-3">
+                <p class="text-white">Ejemplos de padding y margin</p>
+            </div>
+        </div>
+
+        <a href="#" class="mx-auto d-block">Enlace</a>
+        <button type="button" class="btn btn-warning px-5">Comprobar</button>
+
+
+        <div class="container-xl">
+            <div class="bg-success p-3 mt-1">
+                <p class="text-white">Ejemplos de padding y margin</p>
+            </div>
+            <div class="bg-danger p-3">
+                <p class="text-white">Ejemplos de padding y margin</p>
+            </div>
+            <div class="d-grid gap-2">
+                <!--le pone a todo su contenido un margin bottom-->
+                <div class="bg-success p-3 ">
+                    <p class="text-white">Ejemplos de padding y marginn</p>
+                </div>
+                <div class="bg-danger p-3 p-3">
+                    <p class="text-white">Ejemplos de padding y margin</p>
+                </div>
+                <div class="bg-danger p-3 p-3">
+                    <p class="text-white">Ejemplos de padding y margin</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Spinners </h1>
+        <!--los spinners son una figura  que nos dice que se esta descargando algo-->
+
+
+        <div class="spinner-border text-primary spinner-border-sm"></div>
+        <div class="spinner-border text-dark"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border"></div>
+
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+                <!--status define area, los role sirver para comunicar con los dispositivos de lectura asistidad que le permiten a personas ciegas poder navegar en la web-->
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Cards</h1>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="img/curso_1.jpg" alt="imagen curso">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de guitarra</h3>
+                            <p class="card-text">Descripcion del curso de guitarra</p>
+                            <a href="#" class="btn btn-primary w-100">Tomar curso</a>
+                            <!--w-100 toma todo el ancho-->
+                        </div>
+                        <div class="card-footer">
+                            <!--tambien puede ser card-header-->
+                            Desde el footer
+                        </div>
+                    </div>
+                </div>
+                <!--col-md-4-->
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="img/curso_2.jpg" alt="imagen curso">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de diseño </h3>
+                            <p class="card-text">Descripcion del curso de diseño</p>
+                            <a href="#" class="btn btn-primary w-100">Tomar curso</a>
+                            <!--w-100 toma todo el ancho-->
+                        </div>
+                        <div class="card-footer">
+                            <!--tambien puede ser card-header-->
+                            Desde el footer
+                        </div>
+                    </div>
+                </div>
+                <!--col-md-4-->
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="img/curso_3.jpg" alt="imagen curso">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de UX y UI</h3>
+                            <p class="card-text">Descripcion del curso de guitarra</p>
+                            <a href="#" class="btn btn-primary w-100">Tomar curso</a>
+                            <!--w-100 toma todo el ancho-->
+                        </div>
+                        <div class="card-footer">
+                            <!--tambien puede ser card-header-->
+                            Desde el footer
+                        </div>
+                    </div>
+                </div>
+                <!--col-md-4-->
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Formularios </h1>
+        <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+                <!--es la columna de la fila-->
+                <div class="col-md-6">
+                    <form action="">
+                        <legend><i class="bi bi-person-plus-fill"></i> Nuevo cliente</legend>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" name="" id="nombre" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="empresa" class="form-label">Empresa</label>
+                            <input type="text" name="" id="empresa" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="" id="email" class="form-control">
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Registrar <i class="bi bi-plus-circle-fill"></i> </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Toast</h1>
+        <!--es muy similar a una notificacion, mostrar notificaciones sencillas-->
+
+        <button type="button" class="btn btn-primary" id="toastBtn">Mostrar notificaciones</button>
+
+        <!--aria-live="assertive"= cuando hay una notificacion que requiere la atencion del usuario aria-atomic="true" = igual para la accesibilidad para que le diga el user que mm todo esto es solo un mensaje y no divs y divs-->
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
+            <div id="toast" class="toast hidde" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Nuevo email..</strong>
+                    <!--me-auto para separar los elementos como justify-between-->
+                    <small>Hace 3 min</small>
+                    <button type="button" data-bs-dismiss="toast" class="btn-close" aria-label="Cerrar notificacion"><!--btn-close agrega un tachecito-->
+                    </button>
+                </div>
+                <div class="toast-body">
+                    <p>As recibido un mensaje</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Carousel </h1>
+
+
+        <div class="container-xl">
+            <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#indicadores" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/galeria_01.jpg" alt="slide 1" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="text-uppercase">Nuevas Instalaciones</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria_02.jpg" alt="slide 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria_03.jpg" alt="slide 3" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria_04.jpg" alt="slide 4" class="d-block w-100">
+                    </div>
+                    <button type="button" class="carousel-control-prev" data-bs-target="#indicadores" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-target="#indicadores" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Modals</h1>
+        <!--los modals son para abrir vantanas emergentes-->
+
+        <div class="container-xl">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Ver formulario</button>
+        </div>
+
+        <!--modal-->
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Nuevo cliente</h2>
+
+                        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!--aqui ponerl el contenido deel modal que puede ser lo que sea que quieras-->
+                    <div class="modal-body">
+                        <form action="">
+                            <legend><i class="bi bi-person-plus-fill"></i> Nuevo cliente</legend>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" name="" id="nombre" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="empresa" class="form-label">Empresa</label>
+                                <input type="text" name="" id="empresa" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="" id="email" class="form-control">
+                            </div>
+
+
+                        </form>
+                        <!--parte final del modal-->
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="submit">Registrar <i class="bi bi-plus-circle-fill"></i> </button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Navs</h1>
+
+        <div class="container-xl">
+            <ul class="nav flex-column flex-md-row justify-content-between">
+                <!--contenedor principal dele nav jeje-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Historia</a></li>
+                        <li><a href="#" class="dropdown-item">Nuevos productos</a></li>
+                        <li><a href="#" class="dropdown-item">Ofertas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda Virtual</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Categorias</a></li>
+                        <li><a href="#" class="dropdown-item">Nuevos productos</a></li>
+                        <li><a href="#" class="dropdown-item">Ofertas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Off Canvas</h1>
+        <!--es un menu que sale del lado isquierdo con un boton de hamburguesa-->
+        <!--data-bs-toggle="offcanvas" para que llame a offcanvas-->
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            Administrar Perfil
+        </button>
+
+        <!--offcanvas-start , que estara del lado izquierdo hay, top,start,end,bottom y aca dentro dee pone el contenido-->
+        <div class="offcanvas offcanvas-start" id="menu">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Navegacion</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                <!--el btn-close boton de tache-->
+            </div>
+            <div class="offcanvas-body">
+                <h3>Administracion</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#">Informacion</a></li>
+                    <li class="nav-item"><a href="#">Pedidos</a></li>
+                    <li class="nav-item"><a href="#">Tarjetas</a></li>
+                    <li class="nav-item"><a href="#">Notificaciones</a></li>
+                    <li class="nav-item"><a href="#">Buenas gente</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!--<script src="js/bootstrap.bundle.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
